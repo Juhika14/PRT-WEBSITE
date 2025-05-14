@@ -1,0 +1,21 @@
+---
+- name: Installing Jenkins and Java in master (localhost)
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Executing script 1
+      script: 1.sh
+
+- name: Installing Jenkins and Java in master (K-M)
+  hosts: K-M
+  become: true
+  tasks:
+    - name: Executing script 2
+      script: 2.sh
+
+- name: Installing Jenkins and Java in master (K-S)
+  hosts: K-S
+  become: true
+  tasks:
+    - name: Executing script 3
+      script: 3.sh
