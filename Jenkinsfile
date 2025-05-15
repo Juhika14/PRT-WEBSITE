@@ -14,8 +14,8 @@ pipeline {
         stage('Docker') {
             steps {
                 sh 'sudo docker login -u ${DOCKERHUB_CREDENTIALS_USR} -p ${DOCKERHUB_CREDENTIALS_PSW}'
-                sh 'sudo docker build -t juhika/PRT_TEST /home/ubuntu/jenkins/workspace/PRT_PIPELINE/'
-                sh 'sudo docker push juhika/PRT_TEST'
+                sh 'sudo docker build -t juhika/prt_test /home/ubuntu/jenkins/workspace/PRT_PIPELINE/'
+                sh 'sudo docker push juhika/prt_test'
             }
         }
         stage('K8s') {
