@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: mydeployment
-          image: juhika/PRT_TEST:latest
+          image: juhika/prt_test:latest
           ports:
             - containerPort: 80
