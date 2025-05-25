@@ -83,7 +83,7 @@ resource "aws_instance" "inst1" {
   vpc_security_group_ids = [aws_security_group.mysg.id]
 
   tags = {
-    Name = "J-M"
+    Name = "Ansible"
   }
 }
 
@@ -95,7 +95,7 @@ resource "aws_instance" "inst2" {
   vpc_security_group_ids = [aws_security_group.mysg.id]
 
   tags = {
-    Name = "K-M"
+    Name = "J-M"
   }
 }
 
@@ -107,6 +107,6 @@ resource "aws_instance" "inst3" {
   vpc_security_group_ids = [aws_security_group.mysg.id]
 
   tags = {
-    Name = "K-S"
+    Name = "J-S"
   }
 }
