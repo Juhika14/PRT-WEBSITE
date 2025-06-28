@@ -1,6 +1,6 @@
 pipeline {
     environment {
-        DOCKERHUB_CREDENTIALS = credentials("dhubcredd")
+        DOCKERHUB_CREDENTIALS = credentials("dhubcred")
     }
     agent {
         label "K-M"
